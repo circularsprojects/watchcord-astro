@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import Card from '../components/Card.astro';
+import Icon from '../assets/watchcord.png'
+---
+
+<html>
+  <head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
+    <title>watchcord</title>
+	</head>
+  <body class="flex justify-center bg-slate-950 overflow-y-scroll font-display flex-col">
+    <div class="p-8 w-max lg:w-1/2 text-center">
+
+      <div class="flex flex-row justify-center gap-2 items-center my-4"> <!-- watchcord logo & name -->
+        <Image src="/watchcord.png" alt="watchcord" class="rounded-2xl h-14 w-14" loading="eager" width=1024 height=1024 />
+        <h1 class="text-violet-200 text-3xl">
+          watchcord
+        </h1>
+      </div>
+
+      <h1 class="text-violet-400 text-4xl md:text-5xl">
+        a completely independent discord client for apple watch
+      </h1>
+
+      <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-1/2 lg:w-2/3 w-full" loading="eager" width=1024 height=1024 />
+      <Card />
+    </div>
+	</body>
+</html>
+
+
