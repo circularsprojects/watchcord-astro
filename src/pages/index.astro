@@ -14,8 +14,8 @@ import Icon from '../assets/watchcord.png'
     <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
     <title>watchcord</title>
 	</head>
-  <body class="flex justify-center bg-slate-950 overflow-y-scroll font-display flex-col">
-    <div class="p-8 w-max lg:w-1/2 text-center">
+  <body class="flex flex-col bg-slate-950 overflow-y-scroll font-display">
+    <div class="p-8 w-full lg:w-1/2 text-center self-center">
 
       <div class="flex flex-row justify-center gap-2 items-center my-4"> <!-- watchcord logo & name -->
         <Image src="/watchcord.png" alt="watchcord" class="rounded-2xl h-14 w-14" loading="eager" width=1024 height=1024 />
@@ -25,12 +25,21 @@ import Icon from '../assets/watchcord.png'
       </div>
 
       <h1 class="text-violet-400 text-4xl md:text-5xl">
-        a completely independent discord client for apple watch
+        A completely independent Discord client for Apple Watch
       </h1>
 
       <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-1/2 lg:w-2/3 w-full" loading="eager" width=1024 height=1024 />
-      <Card />
     </div>
+    <div class="w-full lg:w-2/3 self-center flex flex-col gap-4 p-4 md:gap-8 md:p-8">
+      <Card 
+        title="View servers"
+        body="Browse all your favourite servers"
+        image="/watchcord servers.png"
+      />
+    </div>
+    <footer class="p-4 w-full text-center">
+      <p class="text-slate-500 text-xs">Discord is a trademark of Discord Inc. Watchcord is not affiliated or endorsed by Discord.</p>
+    </footer>
 	</body>
 </html>
 

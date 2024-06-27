@@ -1,10 +1,20 @@
 ---
-interface Props {}
+interface Props {
+  title: string;
+  body: string;
+  image: string;
+}
 
-const {} = Astro.props;
+const { title, body, image } = Astro.props;
+
+import { Image } from 'astro:assets';
 ---
 
-<div class="p-8 w-max">
-  <h1 class="text-red-300">card</h1>
+<div class="flex p-4 w-full bg-slate-900 rounded-3xl flex-col sm:flex-row justify-between shadow-white drop-shadow">
+  <Image src={image} alt={title} class="w-full sm:w-1/2 drop-shadow-[0_15px_15px_rgba(100,100,100,0.25)]" width=640 height=640 />
+  <div class="text-center w-full sm:w-1/2">
+    <h1 class="text-violet-300 text-4xl font-bold">{title}</h1>
+    <p class="text-violet-100">{body}</p>
+  </div>
 </div>
 
