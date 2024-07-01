@@ -10,9 +10,21 @@ import Icon from '../assets/watchcord.png'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
+    
+    <meta name="description" content="A completely independent Discord client for Apple Watch">
+    <meta name="keywords" content="watchcord, apple watch, discord on apple watch">
+    <meta property="og:title" content="Watchcord">
+    <meta property="og:description" content="A completely independent Discord Client for Apple Watch">
+    <meta property="og:image" content="/watchcord.png">
+    <meta property="og:url" content="https://watchcord.dev">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Watchcord">
+    <meta property="twitter:description" content="A completely independent Discord Client for Apple Watch">
+    <meta property="twitter:image" content="/watchcord.png">
+    <meta property="twitter:url" content="https://watchcord.dev">
     <title>watchcord</title>
 	</head>
   <body class="flex flex-col bg-slate-950 overflow-y-scroll font-display">
@@ -30,25 +42,12 @@ import Icon from '../assets/watchcord.png'
       </h1>
       
       <div class="my-8 self-center w-max flex flex-col sm:flex-row mx-auto h-min gap-2 items-center">
-        <!-- <div class="cursor-not-allowed rounded-[9px] w-fit h-fit bg-stripes-white">
-          <Image src="/appstore.svg" alt="Download on the App Store" class="w-40 mix-blend-overlay" loading="eager" width=256 height=64 />
-        </div>
-        <a href="https://discord.gg/9gc4ShgDAz" class="hover:scale-110 hover:mx-1 ease-in-out duration-75">
-          <Image src="/joindiscord.svg" alt="Join the Discord" class="w-40" loading="eager" width=256 height=64 />
-          </a>
-        -->
-        <!--
-        <img alt="app-store" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/app-store_vector.svg">
-        <img alt="discord-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg">
-        -->
-
         <a>
           <Image src="/app-store_vector.svg" alt="Download on the App Store" class="w-fit" loading="eager" width=256 height=56 />
         </a>
         <a href="https://discord.gg/9gc4ShgDAz">
           <Image src="/discord-plural_vector.svg" alt="Join the Discord" class="w-fit" loading="eager" width=256 height=56 />
         </a>
-        
       </div>
 
       <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-96 w-72" loading="eager" width=1024 height=1024 />
