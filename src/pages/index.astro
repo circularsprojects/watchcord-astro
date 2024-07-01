@@ -10,7 +10,8 @@ import Icon from '../assets/watchcord.png'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
     <title>watchcord</title>
 	</head>
@@ -27,14 +28,41 @@ import Icon from '../assets/watchcord.png'
       <h1 class="text-violet-400 text-4xl md:text-5xl">
         A completely independent Discord client for Apple Watch
       </h1>
+      
+      <div class="my-8 self-center w-max flex flex-col sm:flex-row mx-auto h-min gap-2 items-center">
+        <!-- <div class="cursor-not-allowed rounded-[9px] w-fit h-fit bg-stripes-white">
+          <Image src="/appstore.svg" alt="Download on the App Store" class="w-40 mix-blend-overlay" loading="eager" width=256 height=64 />
+        </div>
+        <a href="https://discord.gg/9gc4ShgDAz" class="hover:scale-110 hover:mx-1 ease-in-out duration-75">
+          <Image src="/joindiscord.svg" alt="Join the Discord" class="w-40" loading="eager" width=256 height=64 />
+          </a>
+        -->
+        <!--
+        <img alt="app-store" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/app-store_vector.svg">
+        <img alt="discord-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg">
+        -->
 
-      <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-1/2 lg:w-2/3 w-full" loading="eager" width=1024 height=1024 />
+        <a>
+          <Image src="/app-store_vector.svg" alt="Download on the App Store" class="w-fit" loading="eager" width=256 height=56 />
+        </a>
+        <a href="https://discord.gg/9gc4ShgDAz">
+          <Image src="/discord-plural_vector.svg" alt="Join the Discord" class="w-fit" loading="eager" width=256 height=56 />
+        </a>
+        
+      </div>
+
+      <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-96 w-72" loading="eager" width=1024 height=1024 />
     </div>
-    <div class="w-full lg:w-2/3 self-center flex flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <div class="w-full lg:w-2/3 self-center gap-4 p-4 md:gap-8 md:p-8 grid grid-cols-1 md:grid-cols-2">
       <Card 
         title="View servers"
         body="Browse all your favourite servers"
         image="/watchcord servers.png"
+      />
+      <Card
+        title="Chat with your friends"
+        body="Use the in-built keyboard or flicktype"
+        image="/watchcord messages.png"
       />
     </div>
     <footer class="p-4 w-full text-center">
