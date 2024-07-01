@@ -4,7 +4,7 @@ import Card from '../components/Card.astro';
 import Icon from '../assets/watchcord.png'
 ---
 
-<html>
+<html lang="en">
   <head>
 		<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,13 +42,13 @@ import Icon from '../assets/watchcord.png'
       </h1>
       
       <div class="my-8 self-center w-max flex flex-col sm:flex-row mx-auto h-min gap-2 items-center">
-        <a>
+        <a href="/" aria-label="Available on the App Store">
           <!--<Image src="/app-store_vector.svg" alt="Download on the App Store" class="w-fit scale-100" loading="eager" width=256 height=256 />-->
-          <object type="image/svg+xml" data="/app-store_vector.svg" class="pointer-events-none" height=56></object>
+          <object type="image/svg+xml" data="/app-store_vector.svg" class="pointer-events-none" height=56 aria-label="Available on the App Store svg"><title>Available on the app store svg</title></object>
         </a>
-        <a href="https://discord.gg/9gc4ShgDAz">
+        <a href="https://discord.gg/9gc4ShgDAz" aria-label="Chat with us on Discord">
           <!--<Image src="/discord-plural_vector.svg" alt="Join the Discord" class="w-fit scale-100" loading="eager" width=256 height=256 />-->
-          <object type="image/svg+xml" data="/discord-plural_vector.svg" class="pointer-events-none" height=56></object>
+          <object type="image/svg+xml" data="/discord-plural_vector.svg" class="pointer-events-none" height=56 aria-label="Chat with us on Discord svg"><title>Chat with us on Discord svg</title></object>
         </a>
       </div>
 
@@ -68,6 +68,8 @@ import Icon from '../assets/watchcord.png'
     </div>
     <footer class="p-4 w-full text-center">
       <p class="text-slate-500 text-xs">Discord is a trademark of Discord Inc. Watchcord is not affiliated or endorsed by Discord.</p>
+      <p class="text-slate-500 text-xs">This website was built with Astro and Tailwind, and is available on <a href="https://github.com/circularsprojects/watchcord-astro" class="text-slate-400">Github.</a></p>
+      <p class="text-slate-500 text-xs"><a href="https://circulars.dev" class="text-slate-400">https://circulars.dev</a></p>
     </footer>
 	</body>
 </html>
