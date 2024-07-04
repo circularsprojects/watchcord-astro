@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "QX9LC82293.circularsprojects.watchcord.watchkitapp" ],
+             "components": [
+               {
+                  "/": "/flicktype/*",
+                  "comment": "Matches any URL whose path starts with /flicktype/"
+               }
+             ]
+           }
+       ]
+   }
+}
