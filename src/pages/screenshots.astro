@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import Card from '../components/EmptyCard.astro'
+---
+
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
+    
+    <meta name="description" content="A completely independent Discord client for Apple Watch">
+    <meta name="keywords" content="watchcord, apple watch, discord on apple watch">
+    <meta property="og:title" content="watchcord">
+    <meta property="og:description" content="A completely independent Discord Client for Apple Watch">
+    <meta property="og:image" content="/watchcord.png">
+    <meta property="og:url" content="https://watchcord.dev">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="watchcord">
+    <meta property="twitter:description" content="A completely independent Discord Client for Apple Watch">
+    <meta property="twitter:image" content="/watchcord.png">
+    <meta property="twitter:url" content="https://watchcord.dev">
+    <script defer data-domain="watchcord.dev" src="https://plausible.circulars.dev/js/script.js"></script>
+    <title>watchcord</title>
+	</head>
+  <body class="flex flex-col bg-slate-950 overflow-y-scroll font-display">
+    <div class="p-8 w-full lg:w-1/2 text-center self-center">
+      <div class="flex flex-row justify-center gap-2 items-center my-4"> <!-- watchcord logo & name -->
+        <Image src="/watchcord.png" alt="watchcord" class="rounded-2xl h-14 w-14" loading="eager" width=1024 height=1024 />
+        <h1 class="text-violet-200 text-3xl">
+          watchcord
+        </h1>
+      </div>
+
+      <h1 class="text-violet-400 text-4xl md:text-5xl m-4">
+        Screenshots
+      </h1>
+
+      <a href="/" class="text-violet-300 text-xl p-2 bg-slate-900 rounded-md">
+        Back
+      </a>
+    </div>
+    <div class="w-full lg:w-2/3 self-center gap-4 p-4 md:gap-8 md:p-8 grid grid-cols-1 md:grid-cols-2">
+      <Card 
+        title="servers"
+        image="/watchcord servers.png"
+      />
+      <Card
+        title="messages"
+        image="/watchcord messages.png"
+      />
+      <Card
+        title="channels"
+        image="/watchcord channels.png"
+      />
+      <Card
+        title="profile"
+        image="/watchcord home.png"
+      />
+    </div>
+  </body>
+</html>
