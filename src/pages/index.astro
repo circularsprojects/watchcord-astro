@@ -2,9 +2,10 @@
 import { Image } from 'astro:assets';
 import Card from '../components/Card.astro';
 import Icon from '../assets/watchcord.png'
+import { ViewTransitions } from 'astro:transitions';
 ---
 
-<html lang="en">
+<html lang="en" transition:animate="fade">
   <head>
 		<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,7 @@ import Icon from '../assets/watchcord.png'
     <meta property="twitter:url" content="https://watchcord.dev">
     <script defer data-domain="watchcord.dev" src="https://plausible.circulars.dev/js/script.js"></script>
     <title>watchcord</title>
+    <ViewTransitions />
 	</head>
   <body class="flex flex-col bg-slate-950 overflow-y-scroll font-display">
     <div class="p-8 w-full lg:w-1/2 text-center self-center">
