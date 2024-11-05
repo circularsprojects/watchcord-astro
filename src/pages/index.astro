@@ -7,14 +7,14 @@ import { ViewTransitions } from 'astro:transitions';
 
 <html lang="en" transition:animate="fade">
   <head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/watchcord rounded.ico">
-    
+
     <meta name="description" content="A completely independent Discord client for Apple Watch">
     <meta name="keywords" content="watchcord, apple watch, discord on apple watch">
     <meta property="og:title" content="watchcord">
@@ -43,7 +43,7 @@ import { ViewTransitions } from 'astro:transitions';
       <h1 class="text-violet-400 text-4xl md:text-5xl">
         A completely independent Discord client for Apple Watch
       </h1>
-      
+
       <div class="my-8 self-center w-max flex flex-col sm:flex-row mx-auto h-min gap-2 items-center">
         <a href="/" aria-label="Available on the App Store">
           <!--<Image src="/app-store_vector.svg" alt="Download on the App Store" class="w-fit scale-100" loading="eager" width=256 height=256 />-->
@@ -55,10 +55,16 @@ import { ViewTransitions } from 'astro:transitions';
         </a>
       </div>
 
+      <div class="p-4 bg-red-400 bg-opacity-30 rounded-2xl border-2 border-red-400">
+        <p class="text-violet-100 text-lg"><strong>Note:</strong> Watchcord is not available on the App Store yet, the button is just there as a placeholder.</p>
+        <p class="text-violet-100 text-lg">Watchcord is not affiliated with the app on the App Store going by the same name, developed by "Dating Apps LLC".</p>
+        <p class="text-violet-100 text-lg">This app is currently in beta, and is available on TestFlight, contact circular on Discord or send an email to circular@watchcord.dev if you want access.</p>
+      </div>
+
       <Image src="/watchcord main.png" alt="watchcord" class="my-8 mx-auto drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] sm:w-96 w-72" loading="eager" width=1024 height=1024 />
     </div>
     <div class="w-full lg:w-2/3 self-center gap-4 p-4 md:gap-8 md:p-8 grid grid-cols-1 md:grid-cols-2">
-      <Card 
+      <Card
         title="View servers"
         body="Browse all your favourite servers, just like how they're sorted on desktop."
         image="/watchcord servers.png"
@@ -69,10 +75,10 @@ import { ViewTransitions } from 'astro:transitions';
         image="/watchcord messages.png"
       />
     </div>
-    <div class="text-violet-300 text-lg bg-slate-900 w-fit self-center p-2 rounded-lg">
+    <div class="text-violet-300 text-xl bg-slate-900 w-fit self-center p-3 px-6 rounded-lg">
       <a href="/screenshots">View More Screenshots</a>
     </div>
-    <div class="text-violet-300 text-lg bg-slate-900 w-fit self-center p-2 rounded-lg my-2">
+    <div class="text-violet-300 text-xl bg-slate-900 w-fit self-center p-3 px-6 rounded-lg my-2">
       <a href="/privacy">Privacy Policy</a>
     </div>
     <footer class="p-4 w-full text-center">
@@ -82,5 +88,3 @@ import { ViewTransitions } from 'astro:transitions';
     </footer>
 	</body>
 </html>
-
-
